@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ivCar2"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="24dp"
+        android:text="TEBAK GAMBAR"
+        android:textSize="32sp" />
+
+    <ImageView
+        android:id="@+id/ivCar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/car1" />
+
+    <EditText
+        android:id="@+id/etTebakGambar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivCar2"
+        android:layout_marginBottom="24dp"
+        android:hint="tebak gambar diatas" />
+
+    <Button
+        android:id="@+id/btnTebak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etTebakGambar"
+        android:text="TEBAK" />
+
+    <ImageView
+        android:id="@+id/ivBenar"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/checkedcar"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivSalah"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/wrongcar"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
